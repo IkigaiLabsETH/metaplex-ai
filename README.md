@@ -1,6 +1,6 @@
 # TRVL - Personalized AI Travel Assistant
 
-Welcome to **TRVL**, your personalized AI Travel Assistant! This innovative app combines the power of AI, memory retention, and social sharing to deliver tailored travel recommendations just for you. By logging in with your Twitter (X) account, you can interact with an AI that remembers your preferences, suggests curated hotels and restaurants from our exclusive list of top 1000 places around the world, and even lets you share these recommendations with your followers—all enhanced with captivating images to enrich your experience.
+AI Travel Assistant with memory retention to deliver tailored travel recommendations just for you.
 
 ## Features
 

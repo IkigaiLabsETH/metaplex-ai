@@ -1,4 +1,3 @@
-import MetaplexLogo from "@/assets/logos/metaplex-logo.png";
 import Header from "@/components/header";
 
 export default function Home() {

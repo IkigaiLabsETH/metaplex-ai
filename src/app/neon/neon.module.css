@@ -50,3 +50,34 @@
   font-style: normal;
   font-display: swap;
 }
+
+.area-color {
+  color: #2753f5;
+}
+
+.body {
+  background: #90adf9;
+}
+
+.arealight {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  background: radial-gradient(
+    circle 100px at var(--x) var(--y),
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.1) 30%,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+
+/* Add this to ensure other elements are above the arealight */
+.neon,
+.link {
+  position: relative;
+  z-index: 2;
+}

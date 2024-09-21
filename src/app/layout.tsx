@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import "@/styles/cubeAnimation.scss"; // Add this line
 import { UmiProvider } from "@/providers/umiProvider";
+import Header from "@/components/header";
 
 const inter = Inter({ subsets: ["latin"] });
 

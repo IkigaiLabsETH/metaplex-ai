@@ -86,3 +86,118 @@
     @apply bg-background text-foreground;
   }
 }
+
+#hamburger-menu {
+  position: relative;
+  width: 24px;
+  height: 20px;
+  cursor: pointer;
+}
+
+#hamburger-menu span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 2px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+#hamburger-menu span:nth-child(1) {
+  top: 0px;
+}
+#hamburger-menu span:nth-child(2) {
+  top: 9px;
+}
+#hamburger-menu span:nth-child(3) {
+  top: 18px;
+}
+
+#hamburger-menu.open span:nth-child(1) {
+  top: 9px;
+  transform: rotate(45deg);
+}
+
+#hamburger-menu.open span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+#hamburger-menu.open span:nth-child(3) {
+  top: 9px;
+  transform: rotate(-45deg);
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+#menu-container .menu-list {
+  transition: transform 0.4s ease-in-out;
+}
+
+#menu-container .menu-list.active {
+  transform: translateX(0);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion-content.block {
+  max-height: 1000px; /* Adjust this value based on your content */
+}
+
+.hamburger-icon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: currentColor;
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.hamburger-icon span:nth-child(1) {
+  top: 0px;
+}
+
+.hamburger-icon span:nth-child(2) {
+  top: 8px;
+}
+
+.hamburger-icon span:nth-child(3) {
+  top: 16px;
+}
+
+.hamburger-icon.open span:nth-child(1) {
+  top: 8px;
+  transform: rotate(135deg);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.hamburger-icon.open span:nth-child(3) {
+  top: 8px;
+  transform: rotate(-135deg);
+}

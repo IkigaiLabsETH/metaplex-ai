@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import ThemeSwitcher from "./themeSwitcher";
+import Image from "next/image";
 
 const WalletMultiButtonDynamic = dynamic(
   async () =>
@@ -9,19 +9,27 @@ const WalletMultiButtonDynamic = dynamic(
   { ssr: false }
 );
 
-const Header = () => {
-  return (
-    <div className="w-full flex justify-between items-center">
-      <p className="font-mono text-sm">
-        It is time to start&nbsp;
-        <code className="font-mono font-bold">LIVING THE GOOD LIFE</code>
-      </p>
-      <div className="flex items-center gap-4">
-        <WalletMultiButtonDynamic />
-        <ThemeSwitcher />
-      </div>
-    </div>
-  );
-};
+const HamburgerMenuDynamic = dynamic(() => import("./HamburgerMenu"), {
+  ssr: false,
+  loading: () => <div className="w-10 h-10"></div>, // Placeholder while loading
+});
 
-export default Header;
+export default function Header() {
+  return (
+    <header className="flex justify-between items-center p-4 bg-transparent">
+      <div className="flex items-center space-x-4">
+        <HamburgerMenuDynamic />
+        <Image
+          src="/IKigai_labs_logo.png"
+          alt="IKigai Labs Logo"
+          width={25}
+          height={10}
+          className="object-contain"
+        />
+      </div>
+      <div className="flex items-center space-x-4">
+        <WalletMultiButtonDynamic />
+      </div>
+    </header>
+  );
+}

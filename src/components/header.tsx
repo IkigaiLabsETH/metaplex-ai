@@ -19,13 +19,6 @@ export default function Header() {
     <header className="flex justify-between items-center p-4 bg-transparent">
       <div className="flex items-center space-x-4">
         <HamburgerMenuDynamic />
-        <Image
-          src="/IKigai_labs_logo.png"
-          alt="IKigai Labs Logo"
-          width={25}
-          height={10}
-          className="object-contain"
-        />
       </div>
       <div className="flex items-center space-x-4">
         <WalletMultiButtonDynamic />

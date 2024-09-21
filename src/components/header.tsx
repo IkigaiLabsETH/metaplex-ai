@@ -11,12 +11,12 @@ const WalletMultiButtonDynamic = dynamic(
 
 const Header = () => {
   return (
-    <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-      <p className="flex w-full justify-center border-b bg-background  pb-6 pt-8 backdrop-blur-2xl lg:static lg:w-auto  lg:rounded-xl lg:border lg:p-4">
+    <div className="w-full flex justify-between items-center">
+      <p className="font-mono text-sm">
         It is time to start&nbsp;
         <code className="font-mono font-bold">LIVING THE GOOD LIFE</code>
       </p>
-      <div className="flex pt-4 lg:pt-0 w-full items-end justify-center gap-4 lg:static lg:size-auto lg:bg-none">
+      <div className="flex items-center gap-4">
         <WalletMultiButtonDynamic />
         <ThemeSwitcher />
       </div>

@@ -6,6 +6,7 @@ function TradingViewWidget() {
   const container = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const currentContainer = container.current;
     const script = document.createElement("script");
     script.src =
       "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js";
@@ -34,17 +35,10 @@ function TradingViewWidget() {
           "support_host": "https://www.tradingview.com"
         }`;
 
-    if (container.current && !container.current.querySelector("script")) {
-      container.current.appendChild(script);
-    }
+    currentContainer?.appendChild(script);
 
     return () => {
-      if (container.current) {
-        const scriptElement = container.current.querySelector("script");
-        if (scriptElement) {
-          container.current.removeChild(scriptElement);
-        }
-      }
+      currentContainer?.removeChild(script);
     };
   }, []);
 
@@ -64,7 +58,7 @@ function TradingViewWidget() {
           rel="noopener nofollow"
           target="_blank"
         >
-          <span className="blue-text">Track all markets on TradingView</span>
+          <span className="black-text">Track all markets on TradingView</span>
         </a>
       </div>
     </div>

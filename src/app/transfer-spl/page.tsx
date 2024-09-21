@@ -1,6 +1,11 @@
 "use client";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/components/uiBlinks/card";
 import { SolanaQRCode } from "@/components/qr-code";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";

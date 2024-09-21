@@ -1,6 +1,6 @@
 import { ThemeProviderWrapper } from "@/providers/themeProvider";
 import { WalletAdapterProvider } from "@/providers/walletAdapterProvider";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "@/styles/cubeAnimation.scss"; // Add this line

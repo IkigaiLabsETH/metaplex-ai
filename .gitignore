@@ -16,6 +16,9 @@
 # production
 /build
 
+# blinks
+/blinks
+
 # misc
 .DS_Store
 *.pem

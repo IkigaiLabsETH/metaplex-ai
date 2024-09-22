@@ -245,3 +245,7 @@ Shadcn is preinstalled so you only need to install the required components you w
 ## Theming
 
 Theming is handled by Shadcn and Tailwind using `CSS Variables`. Documentation regarding theming can be found here [https://ui.shadcn.com/docs/theming](https://ui.shadcn.com/docs/theming) and on Tailwinds websbite [https://tailwindcss.com/docs/](https://tailwindcss.com/docs/)
+
+## Demo Blinks 
+
+https://solana-actions.vercel.app/memo

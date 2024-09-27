@@ -45,15 +45,23 @@ export default function NeonPageContent() {
         }
       ></div>
       <h2 className={`${styles.neon} ${styles.turquoise} ${styles.h2} mb-4`}>
-        LIVE THE LIFE
+        AI AGENT
       </h2>
       <a
-        href="https://livethelife.tv"
+        href="https://livethelife.tv/light-paper/"
         target="_blank"
         rel="noopener noreferrer"
         className={`${styles.neon} ${styles.pink} ${styles.h1} mb-8 block text-center no-underline`}
       >
-        ENTER
+        NFT's Bridging Thoughts & Actions
+      </a>
+      <a
+        href="https://livethelife.tv/light-paper/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`${styles.neon} ${styles.pink} ${styles.h1} mb-8 block text-center no-underline`}
+      >
+        Visit LiveTheLifeTV and Read More
       </a>
     </main>
   );

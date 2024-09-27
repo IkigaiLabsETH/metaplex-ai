@@ -50,7 +50,9 @@
     "tweetnacl": "^1.0.3",
     "vaul": "^0.9.1",
     "zod": "^3.23.8",
-    "zustand": "^4.5.5"
+    "zustand": "^4.5.5",
+    "@tabler/icons": "^3.11.0",
+    "@tabler/icons-react": "^3.11.0"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",

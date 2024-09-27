@@ -248,4 +248,19 @@ Theming is handled by Shadcn and Tailwind using `CSS Variables`. Documentation r
 
 ## Demo Blinks 
 
+https://www.dialect.to/
+
 https://solana-actions.vercel.app/memo
+
+Enable Solana Blinks on Twitter, with wallet support for Phantom, Backpack and Solflare.
+
+Blinks transform the way you interact with the Solana ecosystem. This Chrome extension detects Action-compatible URLs and unfurls them into interactive buttons, allowing you to engage directly with the content.
+
+Key Features:
+- Seamless Integration: Automatically detects Action-compatible URLs and converts them into user-friendly, actionable Blinks on supported websites.
+- Wallet Support: Compatible with Solana wallets including Phantom, Backpack, and Solflare, ensuring secure and streamlined transactions.
+- Enhanced Interactivity: Blinks provide a standardized interface for executing actions on the blockchain, making it easier than ever to participate in the Solana ecosystem.
+
+With Blinks, engaging and interacting with web3 is as simple as sharing a link
+
+Add to Chrome: https://chromewebstore.google.com/detail/dialect-blinks/mhklkgpihchphohoiopkidjnbhdoilof 
